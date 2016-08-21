@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3变形</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			perspective: 1200px;
+			transform-style: preserve-3d;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			background-color: yellow;
+			transition: all 1s ease-in-out;  /*动画*/
+			margin: 50px;
+			float: left;
+		}
+
+		#div_1:hover{
+			transform: translate(100px,50px);
+		}
+
+		#div_2:hover{
+			transform: scale(2);
+		}
+
+		#div_2_2:hover{
+			transform: scale(-2);
+		}
+
+		#div_3:hover{
+			transform: scaleX(2);
+		}
+
+		#div_4:hover{
+			transform: rotate(45deg);
+		}
+
+		#div_5:hover{
+			transform: translate3d(100px,50px,-500px);
+		}
+
+		#div_6:hover{
+			transform: skew(45deg,30deg);
+		}
+
+		#div_7:hover{
+			transform: translateZ(200px);
+		}
+
+		#div_8:hover{
+			transform: rotateX(45deg) scale3d(2,2,2);
+		}
+	</style>
+</head>
+<body>
+<div id="div_1">
+	transform: translate(100px,50px);
+</div>
+<div id="div_2">
+	transform: scale(2);</br>
+	按比例放大缩小</br>
+	取负值时，先翻转，再缩放
+</div>
+<div id="div_2_2">
+	transform: scale(-2);</br>
+	按比例放大缩小</br>
+	取负值时，先翻转，再缩放
+</div>
+<div id="div_3">
+	transform: scaleX(2);</br>
+	按比例放大缩小
+</div>
+<div id="div_4">
+	transform: rotate(45deg);
+</div>
+<div id="div_5">
+	translate3d(100px,50px,50px);
+	给父元素设置perspective;
+</div>
+<div id="div_6">
+	transform: skew(45deg,30deg);
+</div>
+<div id="div_7">
+	transform: translateZ(200px);
+</div>
+<div id="div_8">
+	rotateX(45deg) scale3d(2,2,2);</br>
+	scale3d或者scaleZ必须配合其他属性一起
+</div>
+</body>
+</html>
