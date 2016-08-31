@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gradient</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+		}
+
+		#linear-gradient-1{
+			background-image: linear-gradient(0deg, orange, blue);
+		}
+
+		#linear-gradient-1-1{
+			background-image: linear-gradient(0deg, orange 50px, blue 100px);
+		}
+
+		#linear-gradient-2{
+			background-image: linear-gradient(to top, orange, blue);
+		}
+
+		#linear-gradient-3{
+			background-image: linear-gradient(45deg, orange, blue);
+		}
+
+		#linear-gradient-4{
+			background-image: linear-gradient(to top right, orange, blue);
+		}
+
+		#linear-gradient-5{
+			background-image: linear-gradient(to top, orange, blue, red, yellow, green);
+		}
+
+		#linear-gradient-6{
+			background-image: radial-gradient(circle, orange, blue);
+		}
+
+		#linear-gradient-7{
+			background-image: radial-gradient(circle at left, orange, blue);
+		}
+
+		#linear-gradient-8{
+			background-image: radial-gradient(circle 50px, orange, blue);
+		}
+
+		#linear-gradient-9{
+			background-image: radial-gradient(50px circle at left, orange, blue);
+		}
+
+		#linear-gradient-10{
+			background-image: radial-gradient(50px 100px, orange, blue);
+		}
+
+		#linear-gradient-11{
+			background-image: radial-gradient(circle 200px, orange 50px, blue 200px);
+		}
+
+		#linear-gradient-12{
+			background-image: repeating-radial-gradient(circle, orange 50px, blue 100px);
+		}
+	</style>
+</head>
+<body>
+<h6>线性渐变:linear-gradient( [[angle | to &lt side or corner>], ]? &lt color-stop>[, &lt color-stop>]+ )</h6>
+<p>linear-gradient(0deg, orange, blue);</p>
+<div id="linear-gradient-1">1</div>
+
+<p>linear-gradient(0deg, orange 50px, blue 100px);</p>
+<div id="linear-gradient-1-1">1-1</div>
+
+<p>linear-gradient( <b>to</b> top, orange, blue);</p>
+<div id="linear-gradient-2">2</div>
+
+<p>linear-gradient(45deg, orange, blue);</p>
+<div id="linear-gradient-3">3</div>
+
+<p>linear-gradient(to top right, orange, blue);</p>
+<div id="linear-gradient-4">4</div>
+
+<h6>多色颜色渐变</h6>
+<p>linear-gradient(to top, orange, blue, red, yellow, green);</p>
+<div id="linear-gradient-5">5</div>
+
+<h4>径向渐变: radial-gradient( [[ &lt shape> ||  &lt size>] [at  &lt position>]?, | at  &lt position>, ]? &lt color-stop>[, &lt color-stop>]+ )</h4>
+<p>radial-gradient(circle, orange, blue);</p>
+<div id="linear-gradient-6">6</div>
+
+<p>radial-gradient(circle <b>at left</b>, orange, blue);</p>
+<div id="linear-gradient-7">7</div>
+
+<p>radial-gradient(circle <b>50px</b>, orange, blue);</p>
+<div id="linear-gradient-8">8</div>
+
+<p>radial-gradient(circle 50px <b>at left</b>, orange, blue);</p>
+<div id="linear-gradient-9">9</div>
+
+<p>radial-gradient(50px 100px, orange, blue);</p>
+<div id="linear-gradient-10">10</div>
+
+<p>radial-gradient(circle 200px, orange 50px, blue 200px);</p>
+<div id="linear-gradient-11">11</div>
+
+<h4>重复渐变：repeating-radial/linear-gradient</h4>
+<p>repeating-radial-gradient(circle, orange 50px, blue 100px)</p>
+<div id="linear-gradient-12">12</div>
+</body>
+</html>
